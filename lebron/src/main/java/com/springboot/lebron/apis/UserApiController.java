@@ -1,7 +1,7 @@
 package com.springboot.lebron.apis;
 
 import com.springboot.lebron.model.User;
-import com.springboot.lebron.model.UserRepository;
+import com.springboot.lebron.managersAndInterfaces.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
