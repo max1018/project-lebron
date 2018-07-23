@@ -16,13 +16,6 @@ public interface UserRepository extends CrudRepository<User, Long> {
     public User findByEmail(String email);
 
     /**
-     * Return the user having the passed name or null if no user is found.
-     *
-     * @param name the user email.
-     */
-    public User findByName(String name);
-
-    /**
      * Return the user having the passed id or null if no user is found.
      *
      * @param id the user email.
