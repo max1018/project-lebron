@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 import java.util.List;
 
 @Controller
@@ -28,7 +27,7 @@ public class PostApiController {
 
     //returns a list of posts by userID
     @GetMapping(path="/get")
-    public @ResponseBody List<Post> getAllPosts(@RequestParam Integer userId) {
+    public @ResponseBody List<Post> getPostByUserId(@RequestParam Integer userId) {
         List<Post> listOfPosts = manager.getPostRepository().findByUserId(userId);
         return listOfPosts;
     }
